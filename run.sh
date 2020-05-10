@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 NAME="$(basename "$(pwd)")"
 CONTAINER="$NAME"
 IMAGE="$NAME"
+DOCKER_HOST=$(ip -4 addr show docker0 | grep -Po 'inet \K[\d.]+')
 
 _build() {
 	set -x
@@ -25,6 +26,7 @@ _start() {
 		--stop-timeout 1 \
 		--restart unless-stopped \
 		-p 127.0.0.1:10050:10050/tcp \
+		-p $DOCKER_HOST:10050:10050/tcp \
 		--name $CONTAINER \
 	$IMAGE
 }
