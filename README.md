@@ -42,4 +42,4 @@ Run the client
 
 Check the proxy. This command should output server's ip address
 
-    curl --socks5-hostname 127.0.0.1:11050 ifconfig.me
+    curl --socks5-hostname 127.0.0.1:10050 ifconfig.me
