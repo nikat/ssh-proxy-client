@@ -1,0 +1,10 @@
+Host *
+  Hostname <SSH SERVER HOSTNAME>
+  Port 8833
+  User user
+  LogLevel Debug3
+  DynamicForward 10050
+  PasswordAuthentication no
+  StrictHostKeyChecking no
+  GatewayPorts yes
+  IdentityFile /etc/ssh/id_rsa
