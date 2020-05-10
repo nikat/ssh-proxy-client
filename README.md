@@ -6,13 +6,13 @@
 
 ### at client.example.com
 
-Install Docker and clone ssh-proxy-client.
+Install Docker and clone **ssh-proxy-client**.
 
     git clone https://github.com/nikat/ssh-proxy-client.git
     cd ssh-proxy-client
     cp ssh_config.sample ssh_config
 
-Set server hostname in ssh_config
+Set server hostname in **ssh_config**
     
     Hostname server.example.com
 
@@ -23,7 +23,7 @@ Create the keys
 
 ### at server.example.com
 
-Install Docker and clone ssh-proxy server.
+Install Docker and clone **ssh-proxy** server.
 
     git clone https://github.com/nikat/ssh-proxy.git
     cd ssh-proxy
